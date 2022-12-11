@@ -1,0 +1,5 @@
+<p>
+  <button (click)="addNewTask(newTask.value); newTask.value = ''">{{buttonTitle}}</button>
+  <input #newTask type="text" name='newTask' (keyup.enter)="addNewTask(newTask.value); newTask.value = ''">
+
+</p>
